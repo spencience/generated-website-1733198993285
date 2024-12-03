@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - The Johnson Family</title>
+    <meta name="description" content="Browse through cherished moments of the Johnson family - featuring Sarah, Michael, Emma, and Jack's adventures and celebrations.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .photo-card {
+            aspect-ratio: 1;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1733198993285/family.html" class="text-2xl font-bold hover:text-blue-200">The Johnson Family</a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1733198993285/family/sarah.html" class="hover:text-blue-200">Sarah</a>
+                    <a href="/generated-website-1733198993285/family/michael.html" class="hover:text-blue-200">Michael</a>
+                    <a href="/generated-website-1733198993285/family/emma.html" class="hover:text-blue-200">Emma</a>
+                    <a href="/generated-website-1733198993285/family/jack.html" class="hover:text-blue-200">Jack</a>
+                    <a href="/generated-website-1733198993285/family/photos.html" class="hover:text-blue-200 font-semibold">Photo Gallery</a>
+                </nav>
+                <button class="md:hidden text-white" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="/generated-website-1733198993285/family/sarah.html" class="hover:text-blue-200">Sarah</a>
+                    <a href="/generated-website-1733198993285/family/michael.html" class="hover:text-blue-200">Michael</a>
+                    <a href="/generated-website-1733198993285/family/emma.html" class="hover:text-blue-200">Emma</a>
+                    <a href="/generated-website-1733198993285/family/jack.html" class="hover:text-blue-200">Jack</a>
+                    <a href="/generated-website-1733198993285/family/photos.html" class="hover:text-blue-200">Photo Gallery</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6">Family Photo Gallery</h1>
+            
+            <div class="mb-8">
+                <div class="flex space-x-4 mb-6">
+                    <a href="/generated-website-1733198993285/family/photos/recent.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Recent Photos</a>
+                    <a href="/generated-website-1733198993285/family/photos/events.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Events</a>
+                    <a href="/generated-website-1733198993285/family/photos/vacations.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Vacations</a>
+                </div>
+            </div>
+
+            <div class="photo-grid">
+                <div class="photo-card rounded-lg shadow-md bg-gray-200 cursor-pointer" style="background-color: #e5e7eb;">
+                    <div class="p-4 bg-gradient-to-t from-black/50 to-transparent h-full rounded-lg flex items-end">
+                        <p class="text-white">Summer Vacation 2023</p>
+                    </div>
+                </div>
+                <div class="photo-card rounded-lg shadow-md bg-gray-200 cursor-pointer" style="background-color: #e5e7eb;">
+                    <div class="p-4 bg-gradient-to-t from-black/50 to-transparent h-full rounded-lg flex items-end">
+                        <p class="text-white">Emma's Graduation</p>
+                    </div>
+                </div>
+                <div class="photo-card rounded-lg shadow-md bg-gray-200 cursor-pointer" style="background-color: #e5e7eb;">
+                    <div class="p-4 bg-gradient-to-t from-black/50 to-transparent h-full rounded-lg flex items-end">
+                        <p class="text-white">Jack's Soccer Game</p>
+                    </div>
+                </div>
+                <div class="photo-card rounded-lg shadow-md bg-gray-200 cursor-pointer" style="background-color: #e5e7eb;">
+                    <div class="p-4 bg-gradient-to-t from-black/50 to-transparent h-full rounded-lg flex items-end">
+                        <p class="text-white">Family Reunion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Recent Albums</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="/generated-website-1733198993285/family/photos/album/christmas-2023.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200">
+                        <h3 class="font-semibold">Christmas 2023</h3>
+                        <p class="text-gray-600">32 photos</p>
+                    </a>
+                    <a href="/generated-website-1733198993285/family/photos/album/thanksgiving-2023.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200">
+                        <h3 class="font-semibold">Thanksgiving 2023</h3>
+                        <p class="text-gray-600">24 photos</p>
+                    </a>
+                    <a href="/generated-website-1733198993285/family/photos/album/summer-vacation.html" class="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200">
+                        <h3 class="font-semibold">Summer Vacation</h3>
+                        <p class="text-gray-600">56 photos</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p>&copy; 2024 The Johnson Family. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1733198993285/family/contact.html" class="hover:text-blue-300">Contact Us</a>
+                    <a href="/generated-website-1733198993285/family/about.html" class="hover:text-blue-300">About</a>
+                    <a href="/generated-website-1733198993285/family/updates.html" class="hover:text-blue-300">Family Updates</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
